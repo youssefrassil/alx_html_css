@@ -1,0 +1,51 @@
+/* base.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Add more base styles as needed */
+/* styles.css */
+
+/* Apply flexbox to the body and main containers */
+
+body {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    height: 100vh; /* Take full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+main {
+    display: flex;
+    flex: auto; /* Automatically take remaining space */
+}
+
+/* Arrange main content area with article and aside */
+
+article {
+    flex: 2; /* Take 2/3 of the available width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Optional: Add padding for spacing */
+}
+
+aside {
+    flex: 1; /* Take 1/3 of the available width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Optional: Add padding for spacing */
+}
+
+/* Optional: Style header, footer, and other elements as needed */
+header, footer {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Additional styling for main content if necessary */
